@@ -1,0 +1,149 @@
+<!-- 
+ Datos:
+ > Facebook 		: https://www.facebook.com/Dawudph89
+ > twitter			: https://www.twitter.com/DawudPerez
+ > GitHub			: https://github.com/Dawudph89/
+
+ >_ Dawudph89 { David Pérez }
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>System Login and Register</title>
+  		
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  		<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+
+  <div class="container">
+    
+      <!-- <img src="http://semantic-ui.com/examples/assets/images/logo.png" class="image"> -->
+     <div class="content">
+       	<hgroup>       		
+	        <h1>Sistema de Login y Registro</h1>
+	        <h3>&copy Dawud89</h3>
+       	</hgroup>
+     </div>
+    
+
+    <form class="form" action="" method="GET">
+      
+
+      <div class="buttons">
+         <a href="#" data-sesion="1">Inicio por correo</a>
+         <a href="#" data-sesion="2">Sesión rápida</a>
+         <span></span>
+      </div>
+
+      <div class="formContent">
+	       <div class="forms visible active" tabindex="1">
+			   <div class="fields">
+				    <div class="input">
+				       	<span class="fa fa-user"></span>
+				       	<input type="email" name="email" id="email" placeholder="E-mail address">
+				    </div>
+				   	<div class="input">
+					    <span class="fa fa-lock"></span>
+				        <input type="password" name="password" id="password" placeholder="Password">
+				    </div>
+			   	</div>
+			      	
+	       		<div class="ui_submitbtn">Iniciar Sesion</div>
+	       		<div class="msg_error"></div>
+	       </div>
+	      	<div class="forms hide" tabindex="2">
+		      	<div class="fields">
+		        	<div class="input">
+		            	<span class="fa fa-user"></span>
+		            	<input type="text" name="nameR" id="name" placeholder="Name">
+		          	</div>
+		       	
+		        	<div class="input">
+		            	<span class="fa fa-image"></span>
+		            	<input type="text" name="imgR" id="img" placeholder="Link de la Imagen">
+		          	</div>
+		          	<div class="input">
+		            	<span class="fa fa-address-card-o"></span>
+		            	<input type="email" name="emailR" id="email" placeholder="E-mail address">
+		          	</div>
+		          	<div class="input">
+		            	<span class="fa fa-lock"></span>
+		            	<input type="password" name="passwordR" id="password" placeholder="Password">
+		          	</div>
+		      	</div>
+		       	<div class="ui_submitbtn">Registrarse</div>
+	    	   	<div class="msg_error"></div>
+	    	</div>
+
+	       <div class="content_img hide" tabindex="3">
+
+	         <div class="ui_card img">
+		           <span class="fa fa-time"></span>
+		        </a>
+		        <div class="image ">
+		          <figure class="session">
+		            <img src="http://lizardwizardinablizzard.com/wp-content/uploads/2015/11/Jim_Raynor_SC2_Perfil_1.jpg">
+		          	<figcaption class="session">@Dawud89</figcaption>
+		          </figure>
+		        </div>
+
+		          <!-- <div class="content">
+		            <a class="header" data-email="Terran_89@hotmail.com" data-pass="123456">Dawud</a>
+		          </div> -->
+		     </div>
+	       </div>      	
+	        <!-- <input type="hidden" value="entrar"> -->
+
+      </div>
+       
+
+    </form>
+       <section class="modalogin hidden">
+        	<div class="contentModal">
+
+        	 	<a class="closeModal" >
+			        <span class="fa fa-close" onclick="
+			         this.parentNode.parentNode.parentNode.classList.remove('show'); 
+			         " ></span>
+			    </a>
+
+		        <div class="ui_card img">
+			       
+			        <div class="image">
+			          <figure>
+			            <img src="http://lizardwizardinablizzard.com/wp-content/uploads/2015/11/Jim_Raynor_SC2_Perfil_1.jpg">
+			          	<figcaption>@Dawud89</figcaption>
+			          </figure>
+			        </div>
+			    </div>
+
+
+		       <div class="forms">
+		       	<div class="fields">
+		       	   <div class="input">
+		       	   		<span class="fa fa-lock"></span>
+		       	   		<input type="password"/>
+		       	   </div>
+		       	   <div class="ui_submitbtn">Iniciar Sesion</div>
+	       		   <div class="msg_error"></div>
+		       	</div>
+		       </div>
+        	</div>
+	    </section>
+       	
+
+    <div class="ui_msg">
+      <span>¿Erés nuevo por aquí? </span> <a href="#" data-login="registrarse">Regístrate</a>
+    </div>
+  </div>
+
+
+	<script type="text/javascript" src="js/mainSystem.js"></script>
+
+</body>
+</html>
